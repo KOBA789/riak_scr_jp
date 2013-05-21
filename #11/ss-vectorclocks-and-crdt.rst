@@ -430,7 +430,7 @@ Riak PN-counter 概観
 準備 (すぐに古くなるので注意)
 
 - riak を clone
-- 一旦 `./rebar get-dpes`
+- 一旦 `./rebar get-deps`
 - deps/riak_kv を `rdb-kv-counter` ブランチに変更
 - deps/riak_pb を `rdb-kv-counter` ブランチに変更
 - deps/riak_api/rebar.config にて riap_pb の依存バージョンを `.*` に変更
