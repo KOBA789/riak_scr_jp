@@ -380,15 +380,6 @@ Riak における vclock により検知された並列更新 JSON データの�
 CRDT
 ====
 
-- "A comprehensive study of Convergent and Commutative Replicated Data Types"
-  http://hal.upmc.fr/docs/00/55/55/88/PDF/techreport.pdf
-- Strong Eventual Consistency and Conflict-free Replicated Data Types
-  Microsoft Research
-  http://research.microsoft.com/apps/video/dl.aspx?id=153540
-- Ruby CRDT library by aphyr: https://github.com/aphyr/meangirls
-- Python CRDT library by Eric Moritz: https://github.com/ericmoritz/crdt
-- mochi/statebox: https://github.com/mochi/statebox
-
 ものすごく簡単な例
 
 - 追加しか出来ない集合 (Grow-Set, G-Set)
@@ -418,6 +409,20 @@ CRDT
 - ノード追加してパーティションの移動が起きたらプライマリの vnode (ID) が変わる。
   繰り替え起きたらどこまで増加する? 古いデータを prune することは可能か?
 - クライアント側で OS プロセス ID を使うと再起動の度に ID が変わっていく、危険。
+
+CRDT 参考
+=========
+
+- "A comprehensive study of Convergent and Commutative Replicated Data Types"
+  http://hal.upmc.fr/docs/00/55/55/88/PDF/techreport.pdf
+- Strong Eventual Consistency and Conflict-free Replicated Data Types
+  Microsoft Research
+  http://research.microsoft.com/apps/video/dl.aspx?id=153540
+- Ruby CRDT library by aphyr: https://github.com/aphyr/meangirls
+- Python CRDT library by Eric Moritz: https://github.com/ericmoritz/crdt
+- mochi/statebox: https://github.com/mochi/statebox
+- Call me maybe: Riak
+  http://aphyr.com/posts/285-call-me-maybe-riak
 
 Riak PN-counter 概観
 ====================
